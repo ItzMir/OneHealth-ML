@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Data files (DVC tracks these, not Git)
+data/raw/
+data/interim/
+data/processed/
+data/external_validation/
+
+# Models (large binary files)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pb
+models/*.onnx
+
+# DVC
+.dvc/cache/
+*.dvc
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~$*
