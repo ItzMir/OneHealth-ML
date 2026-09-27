@@ -179,3 +179,23 @@ Every significant methodological decision, with rationale, alternatives consider
 - Reproducibility and auditability.
 - Enables independent verification.
 - Required by thesis and journal submission guidelines.
+
+
+## D15 — Post-hoc osmolality leakage discovery and fix (2026-09-27)
+
+Permutation importance on the external 2021–2023 cohort revealed that serum
+osmolality (LBXSOSSI) plus its components sodium (LBXSNASI) and BUN (LBXSBU)
+dominated the diabetes model's signal (AUROC drops of +0.28, +0.23, +0.08
+respectively). Osmolality is calculated as 1.86×Na + glucose/18 + BUN/2.8 + 9,
+making it an indirect proxy for serum glucose — already excluded as label
+leakage. The same pattern affected metabolic syndrome, whose definition
+includes fasting glucose.
+
+**Action:** Added LBXSOSSI, LBXSNASI, LBXSBU to the leakage maps for both
+diseases. Retrained OneHealth-Net from scratch. Post-retrain permutation
+confirmed the leak was eliminated (top features became age, cholesterol,
+insulin, BMI — all clinically legitimate).
+
+**Impact:** Diabetes external AUROC decreased from 0.9335 to 0.8683 (honest
+value). All other diseases unaffected (Δ ≤ ±0.01). Mean external AUROC
+decreased from 0.8342 to 0.8245.

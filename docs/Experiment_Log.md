@@ -156,3 +156,16 @@ order (newest first).
 - All six components verified with `01_dataset_verification.ipynb`.
 - Verified CSVs saved to `data/interim/`.
 - Documented in `Data_Quality_Log.md`.
+
+
+## 2026-09-27 — Permutation importance audit and leak fix
+
+Full permutation importance on external 2021–2023 (N=3425, 5 perms/feature).
+
+Findings:
+- Diabetes: LBXSOSSI (+0.28), LBXSNASI (+0.23), LBXSBU (+0.08) dominated
+- Metabolic syndrome: same three features dominated
+- Hypertension, CKD, dyslipidemia, CVD, liver disease: no leakage
+
+Fix: Updated leakage_map. Retrained OneHealth-Net v3.
+Results: Mean external AUROC 0.8245 (was 0.8342). Diabetes 0.8683 (was 0.9335).

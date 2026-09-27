@@ -26,3 +26,9 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+
+# Large model files
+models/deep_learning/*.pt
+data/backup/*.zip
+*.ipynb_checkpoints/
