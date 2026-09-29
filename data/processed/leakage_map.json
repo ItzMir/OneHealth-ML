@@ -1,0 +1,90 @@
+{
+  "label_diabetes": [
+    "LBXGH",
+    "LBXGLU",
+    "DIQ010",
+    "HOMA_IR",
+    "LBXSGL",
+    "met_syndrome_count",
+    "ASCVD_risk",
+    "DIQ160",
+    "DID040",
+    "DIQ080",
+    "LBXSOSSI",
+    "LBXSNASI",
+    "LBXSBU"
+  ],
+  "label_hypertension": [
+    "BPXSY1",
+    "BPXSY2",
+    "BPXSY3",
+    "BPXSY4",
+    "BPXDI1",
+    "BPXDI2",
+    "BPXDI3",
+    "BPXDI4",
+    "BPXPLS",
+    "BPXPULS",
+    "BPQ020",
+    "mean_sbp",
+    "mean_dbp",
+    "ASCVD_risk"
+  ],
+  "label_ckd": [
+    "LBXSCR",
+    "eGFR",
+    "KIQ022",
+    "KIQ025",
+    "URDACT",
+    "eGFR_stage"
+  ],
+  "label_dyslipidemia": [
+    "LBXTC",
+    "LBDHDD",
+    "LBXTR",
+    "LBXSCH",
+    "LBXSTR",
+    "ASCVD_risk"
+  ],
+  "label_cvd": [
+    "MCQ160B",
+    "MCQ160C",
+    "MCQ160D",
+    "MCQ160E",
+    "MCQ160F",
+    "MCQ300A",
+    "MCQ300B",
+    "MCQ300C"
+  ],
+  "label_metabolic_syndrome": [
+    "BMXWAIST",
+    "LBXTR",
+    "LBDHDD",
+    "BPXSY1",
+    "BPXSY2",
+    "BPXSY3",
+    "BPXSY4",
+    "BPXDI1",
+    "BPXDI2",
+    "BPXDI3",
+    "BPXDI4",
+    "mean_sbp",
+    "mean_dbp",
+    "LBXGLU",
+    "WHR",
+    "LBXSGL",
+    "LBXSTR",
+    "met_syndrome_count",
+    "ASCVD_risk",
+    "LBXSOSSI",
+    "LBXSNASI",
+    "LBXSBU"
+  ],
+  "label_liver_disease": [
+    "LBXSATSI",
+    "LBXSASSI",
+    "LBXSGTSI",
+    "BMXBMI",
+    "obesity_class"
+  ]
+}
